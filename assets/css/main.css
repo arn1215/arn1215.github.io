@@ -74,11 +74,15 @@ input, select, textarea {
 	appearance: none;
 }
 
-a {
+.container a {
 	text-decoration: none;
 	font-size: 24px;
 	color: rgba(0, 0, 0, 0.589);
 	transition: 0.3s all;
+	padding: 40px;
+}
+.container p {
+	padding: 40px;
 }
 
 a:visited {
