@@ -21,13 +21,10 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-    - uses: actions/setup-node@v3
-    with:
-      node-version: '16'
-      check-latest: true
-    - run: npm install --if-present
+      uses: actions/setup-node@v3
+      with:
+        node-version: '16'
+        cheeck-latest: true
+    - run: npm install
     - run: npm run build --if-present
-
-
-
 
