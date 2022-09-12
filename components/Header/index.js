@@ -77,8 +77,7 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
                   )}
                   {showResume && (
                     <Button
-                      onClick={() =>
-                        window.open("mailto:hello@chetanverma.com")
+                      onClick={() => router.push("/resume")
                       }
                     >
                       Resume
@@ -146,7 +145,7 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
               </Button>
             )}
 
-            <Button onClick={() => window.open("mailto:hello@chetanverma.com")}>
+            <Button onClick={() => window.open("mailto:ali.naqvi.dev@gmail.com")}>
               Contact
             </Button>
             {mounted && theme && data.darkMode && (
