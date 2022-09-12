@@ -78,12 +78,19 @@ export default function Home() {
             >
               {data.headerTaglineOne}
             </h1>
-            <h1
-              ref={textTwo}
-              className="text-3xl tablet:text-6xl laptop:text-6xl laptopl:text-8xl p-1 tablet:p-2 text-bold w-full laptop:w-4/5"
-            >
-              {data.headerTaglineTwo}
-            </h1>
+            <div className="flex">
+
+              <h1
+                ref={textTwo}
+                className="text-3xl tablet:text-6xl laptop:text-6xl laptopl:text-8xl p-1 tablet:p-2 text-bold w-full laptop:w-4/5"
+              >
+                {data.headerTaglineTwo}
+              </h1>
+              <img style={{height:180, width: 180, borderRadius: "200px"}} src="https://amuse-bucket.s3.amazonaws.com/74ad207468c3c977cf21d1b7381486e1" />
+
+              
+            </div>
+
             <h1
               ref={textThree}
               className="text-3xl tablet:text-6xl laptop:text-6xl laptopl:text-8xl p-1 tablet:p-2 text-bold w-full laptop:w-4/5"
